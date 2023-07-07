@@ -1,6 +1,8 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Footer from '@/components/Copyrights'
+import Copyrights from '@/components/Copyrights'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,6 +23,8 @@ export default function RootLayout({
         <main className='px-32 '>
         <Navbar />
         {children}
+        <Copyrights />
+
         </main>
         </body>
     </html>
