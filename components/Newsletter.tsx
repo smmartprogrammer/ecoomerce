@@ -19,7 +19,7 @@ const Newsletter = () => {
           placeholder="Input email address"
         />
         <Button
-          className=" rounded-none px-6 py-2 text-center bg-[#000000]"
+          className=" rounded-none px-6 py-2 text-center bg-[#000000] text-white"
           type="submit"
         >
           Get Started

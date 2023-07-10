@@ -20,12 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className='px-32 '>
-        <Navbar />
-        {children}
-        <Copyrights />
-
-        </main>
+      <main className='px-5 sm:px-16 md:px-32 md:py-0.5 py-8'>
+          <Navbar />
+          {children}
+          </main>
+        <Copyrights />
+      
         </body>
     </html>
   )

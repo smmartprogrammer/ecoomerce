@@ -10,47 +10,49 @@ import { ShoppingCart } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="flex">
-      <div className="md:flex">
-        <div className="mt-16">
-          <Badge className="rounded bg-gray-200 text-blue-700 py-1 px-6 text-lg ">
-            Sale 70%
-          </Badge>
-          <div>
-            <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mt-10 text-[#212121] ">
-              An Industrial Take on Streetwear
-            </h1>
-            <p className="mt-6 font-extralight text-[#976866] text-base ">
-              Anyone can beat you but no one can beat your outfit as long as you
-              wear Dine outfits.
-            </p>
-            <div className="mt-8 ">
-              <Button className="bg-[#212121] text-[#ffff] text-lg py-9 gap-x-2 px-6">
-                <ShoppingCart className="h-5 w-6" />
-                <p className=" leading-tight  ">
-                  Start
-                  <br />
-                  Shopping
-                </p>
-              </Button>
-              <div className="mt-10 flex gap-4 w-28 ">
-                <Image src={bazar} alt="bazar" />
-                <Image src={bustle} alt="bustle" />
-                <Image src={versace} alt="versace" />
-                <Image src={instyle} alt="instyle" />
-              </div>
-            </div>
-          </div>
+    <div className="flex justify-center items-center">
+      <div className="lg:w-[45%] mt-16 border-3 border-black">
+        <Badge className="rounded bg-gray-200 text-blue-700 py-1 px-6 text-lg ">
+          Sale 70%
+        </Badge>
+        <h1 className="tracking-wide scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-6xl mt-10 text-[#212121] ">
+          An Industrial Take on Streetwear
+        </h1>
+        <p className=" w-[70%] tracking-wide mt-6 font-semibold	text-[#9C9E9C] text-base ">
+          Anyone can beat you but no one can beat
+          your outfit as long as you wear Dine outfits.
+        </p>
+        <Button className="mt-8 bg-[#212121] text-[#ffff] text-lg py-9 gap-x-2 px-6">
+          <ShoppingCart className="h-5 w-6" />
+          <p className=" leading-tight  ">
+            Start
+            <br />
+            Shopping
+          </p>
+        </Button>
+        <div className="mt-10 flex gap-4 w-28">
+          <Image src={bazar} alt="bazar"/>
+          <Image src={bustle} alt="bustle"/>
+          <Image src={versace} alt="versace"/>
+          <Image src={instyle} alt="instyle"/>
         </div>
       </div>
-      <div className="md:relative md:flex">
-        <div className="md:absolute md:h-96 md:w-96 md:rounded-full md:bg-[#FFECE3]   ">
-          <div className="">
-            <Image src={hero} alt="heroimage" />
-          </div>
+
+      {/* image container */}
+
+      <div className="hidden md:block ml-32 border-1 border-blue">
+        <div className="rounded-full bg-[#FFECE3]">
+          <Image src={hero} alt="heroimage"/>
         </div>
       </div>
+
+
+
+
+
     </div>
+
+
   );
 };
 
