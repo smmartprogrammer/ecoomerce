@@ -10,7 +10,7 @@ import { ShoppingCart } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center wrapper">
       <div className="lg:w-[45%] mt-16 border-3 border-black">
         <Badge className="rounded bg-gray-200 text-blue-700 py-1 px-6 text-lg ">
           Sale 70%

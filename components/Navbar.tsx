@@ -10,7 +10,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="flex justify-between items-center py-8 ">
+    <div className="flex justify-between items-center py-8 wrapper ">
       <div>
         <Image src={Logo} alt="logo" className="w-36" />
       </div>

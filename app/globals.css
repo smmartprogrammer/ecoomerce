@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
  
+@layer components {
+
+.wrapper {
+    @apply max-w-screen-lg mx-auto px-0
+}
+}

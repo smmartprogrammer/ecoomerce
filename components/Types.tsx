@@ -9,3 +9,9 @@ export const NavbarArray: Array<NavbarItemTypes> = [
   { label: "Kids", href: "/Kids" },
   { label: "All Products", href: "/AllProducts" },
 ];
+
+export const Products = [
+
+  
+
+]
