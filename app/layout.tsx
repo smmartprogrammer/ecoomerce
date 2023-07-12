@@ -1,8 +1,8 @@
-import Navbar from '@/components/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/Copyrights'
 import Copyrights from '@/components/Copyrights'
+import Hamzanav from '@/components/Hamzanav'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <main className='px-5 sm:px-16 md:px-32 md:py-0.5 py-8'>
-          {/* <Navbar /> */}
+          <Hamzanav />
           {children}
           </main>
         <Copyrights />

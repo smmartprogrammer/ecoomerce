@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import hero from "@/public/hero.webp";
 import bazar from "@/public/bazar.webp";
@@ -7,6 +8,8 @@ import versace from "@/public/versace.webp";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
+import Link from "next/link";
+import AllProducts from "./AllProducts";
 
 const Hero = () => {
   return (
@@ -22,14 +25,17 @@ const Hero = () => {
           Anyone can beat you but no one can beat
           your outfit as long as you wear Dine outfits.
         </p>
+        {/* <Link href={AllProducts}> */}
         <Button className="mt-8 bg-[#212121] text-[#ffff] text-lg py-9 gap-x-2 px-6">
           <ShoppingCart className="h-5 w-6" />
+          
           <p className=" leading-tight  ">
             Start
             <br />
             Shopping
           </p>
         </Button>
+        {/* </Link> */}
         <div className="mt-10 flex gap-4 w-28">
           <Image src={bazar} alt="bazar"/>
           <Image src={bustle} alt="bustle"/>

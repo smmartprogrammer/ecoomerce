@@ -7,25 +7,22 @@ import { link } from "fs";
 
 const Footer = () => {
   return (
-
-
-
-
-<div className="flex   mt-44 border-t border-gray-100  gap-4">
-      <div className="flex  justify-center items-center gap-6 ">
-        <Image src={Logo} alt="logo" className="object-contain"  />
-        <p className="mt-6 font-normal text-[#976866] text-lg flex flex-wrap">
-          
+    <div className="flex justify-center flex-col md:flex-row mt-24">
+      {/* left side */}
+      <div className="flex flex-col  gap-4  ">
+        <Image src={Logo} alt="logo" className="object-contain  " />
+        <p className="mt-6 font-normal text-[#976866] text-lg flex flex-wrap w-[40%] ">
           Small, artisan label that offers a thoughtfully curated collection of
           high quality everyday essentials made.
         </p>
+        <div></div>
       </div>
-      <div className="flex gap-12    ">
+
+      {/* right side */}
+      <div className="flex gap-6 flex-col md:flex-row justify-end   ">
         {footerLinks.map((link) => (
           <div key={link.title}>
-            <h3 className="mt-6 font-bold text-[#666666] text-xl">
-              {link.title}{" "}
-            </h3>
+            <h3 className=" font-bold text-[#666666] text-xl ">{link.title} </h3>
             {link.links.map((item) => (
               <Link
                 key={item.title}

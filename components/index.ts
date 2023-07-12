@@ -23,7 +23,8 @@ export const footerLinks = [
     links: [
         {  title: "Whatsapp", url: "/" } ,
         {  title: "Support 24h", url: "/" } ,
-      
+     
     ]}
 
 ]
+

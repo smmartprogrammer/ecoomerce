@@ -1,9 +1,9 @@
-import Image from "next/image";
-import product1 from "@/public/product1.png";
-import product2 from "@/public/product2.png";
-import product3 from "@/public/product3.png";
+import ProductCard from "./ProductCard";
+import { Products } from "./ProductDetails";
 
-const Promotion = () => {
+const Product = () => {
+  const productChecks = Products.slice(0, 3);
+
   return (
     <div>
       <div className="mt-32 mb-12 text-center  space-y-1">
@@ -11,21 +11,25 @@ const Promotion = () => {
           PRODUCTS
         </p>
         <h1 className="py-5 flex justify-center text-gray-800 text-3xl tracking-wider font-bold">
-            Check What We Have
+          Check What We Have
         </h1>
       </div>
 
       <div className="flex">
-        <div><Image src={product1} alt="products"/></div>
-        <div><Image src={product2} alt="products"/></div>
-        <div><Image src={product3} alt="products"/></div>
+        <div className="flex justify-evenly mt-16 ">
+          {productChecks.map((product) => (
+            <ProductCard
+              key={product.id}
+              title={product.title}
+              price={product.price}
+              img={product.image}
+            />
+          ))}
+        </div>
       </div>
-
-
-
-      </div>
+    </div>
 
   );
 };
 
-export default Promotion;
+export default Product;

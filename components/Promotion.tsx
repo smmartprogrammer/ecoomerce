@@ -3,7 +3,7 @@ import promo1 from "@/public/promo1.webp";
 import promo2 from "@/public/promo2.webp";
 import promo3 from "@/public/promo3.webp";
 
-const Products = () => {
+const Promotion = () => {
   return (
     <div>
       <div className="mt-32 text-center  space-y-1">
@@ -16,7 +16,7 @@ const Products = () => {
       </div>
 
       {/* right */}
-      <div className="flex  py-5">
+      <div className="flex flex-wrap  py-5">
         <div className=" flex-1 flex flex-col ">
           <div className="w-auto mx-5 h-52 bg-[#D6D6D8] inline-flex ">
             <div className="max-w-[13rem] py-8 pl-8">
@@ -46,7 +46,7 @@ const Products = () => {
         </div>
 
         {/* left */}
-        <div className="flex-1 flex h-full w-full ">
+        <div className="md:flex-1 md:flex md:flex-row flex-col md:h-full w-full   ">
           <div className="mx-2 bg-[#EFE1C7] ">
             <div className="p-4 py-5 ">
               <p className="text-lg font-normal">Flex Sweatshirts </p>
@@ -60,7 +60,7 @@ const Products = () => {
             </div>{" "}
             <Image src={promo2} alt="" />
           </div>
-          <div className=" mx-2 bg-[#D7D7D9]">
+          <div className=" mx-2 bg-[#D7D7D9] mt-3  ">
             <div className="p-4 py-5 ">
               <p className="text-lg font-normal">Flex Push Button Bomber </p>
               <p className="text-lg font-normal ">
@@ -80,4 +80,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Promotion;

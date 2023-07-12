@@ -1,6 +1,19 @@
+import Image, { StaticImageData } from "next/image";
+
 export interface NavbarItemTypes {
   label: string;
   href: string;
+}
+
+export interface Product {
+  id: string;
+  name: string;
+  title:string;
+  price: number;
+  image: string | StaticImageData;
+  category: string;
+  gender: string;
+  href?: string;
 }
 
 export const NavbarArray: Array<NavbarItemTypes> = [
@@ -10,8 +23,4 @@ export const NavbarArray: Array<NavbarItemTypes> = [
   { label: "All Products", href: "/AllProducts" },
 ];
 
-export const Products = [
-
-  
-
-]
+export const ProductsList = [];
