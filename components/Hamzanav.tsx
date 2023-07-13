@@ -21,9 +21,11 @@ import logo from "@/public/Logo.webp";
 const Hamzanav = () => {
   return (
     <div className="flex wrapper justify-between py-10">
+      <Link href="/">
       <div>
         <Image src={Logo} alt="LOGO" />{" "}
       </div>
+      </Link>
       <div>
         <ul className="md:flex md:justify-between md:items-center gap-x-5 md:block sm:hidden ">
           {NavbarArray.map((NavbarArray) => (

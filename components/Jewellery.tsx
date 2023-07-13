@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const Jewellery = () => {
   return (
-    <div className="px-1 text-gray-700">
+    <div className="px-1 text-gray-700 mt-28">
       <div className=" flex justify-start md:justify-end text-5xl font-bold py-4">
         <h6 className="max-w-[27rem]">
           Unique and Authentic Vintage Designer Jewellery

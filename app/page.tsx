@@ -18,8 +18,8 @@ export default function Home() {
         <Products />
         <Jewellery />
         <Newsletter />
-        <AllProducts />
-        <ProductList />
+        {/* <AllProducts /> */}
+        {/* <ProductList /> */}
         <Footer />
       </h1>
     </div>

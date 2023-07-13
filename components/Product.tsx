@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import ProductCard from "./ProductCard";
 import { Products } from "./ProductDetails";
 
@@ -6,7 +7,7 @@ const Product = () => {
 
   return (
     <div>
-      <div className="mt-32 mb-12 text-center  space-y-1">
+      <div className="mt-28 mb-12 text-center  space-y-1">
         <p className="text-blue-700 flex justify-center font-semibold text-sm   tracking-wider  ">
           PRODUCTS
         </p>
@@ -16,13 +17,14 @@ const Product = () => {
       </div>
 
       <div className="flex">
-        <div className="flex justify-evenly mt-16 ">
+        <div className="flex justify-evenly mt-2 ">
           {productChecks.map((product) => (
             <ProductCard
               key={product.id}
               title={product.title}
               price={product.price}
-              img={product.image}
+              img={product.image as StaticImageData}
+              id={product.id}
             />
           ))}
         </div>

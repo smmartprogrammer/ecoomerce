@@ -111,7 +111,7 @@ export const Products: Product[] = [
     price: 225,
     image: Product10,
     gender: "female",
-     
+
 },
 {
     id: "11",
@@ -120,11 +120,7 @@ export const Products: Product[] = [
     category: "Sweaters",
     price: 195,
     image: Product11,
-    gender: "female",
-     
+    gender: "male",
+   
 },
-
-
-
-
 ]

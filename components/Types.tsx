@@ -1,4 +1,6 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
+
 
 export interface NavbarItemTypes {
   label: string;
@@ -12,15 +14,15 @@ export interface Product {
   price: number;
   image: string | StaticImageData;
   category: string;
-  gender: string;
+  gender?: string;
   href?: string;
 }
 
 export const NavbarArray: Array<NavbarItemTypes> = [
-  { label: "Female", href: "/Female" },
-  { label: "Male", href: "/Male" },
-  { label: "Kids", href: "/Kids" },
-  { label: "All Products", href: "/AllProducts" },
+  { label: "Female", href: "/gender/female" },
+  { label: "Male", href: "/gender/male" },
+  { label: "Kids", href: "/gender/kids" },
+  { label: "All Products", href: "/allproducts" },
 ];
 
 export const ProductsList = [];
