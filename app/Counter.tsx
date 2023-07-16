@@ -2,21 +2,22 @@
 
 import React from "react";
 import { useSelector, useDispatch } from 'react-redux'
-import { counterAction } from "./store/slice/cartslice";
 import { RootState } from "./store/store";
+import { counterActions } from "./store/slice/cartSlice";
 
 
 
 const Counter = () => {
-  const counterValue = useSelector((state: RootState) => state.counter.value);
   const dispatch = useDispatch()
+  const counterValue = useSelector((state: RootState) => state.counterSlice.value );
+
   
   const increment = () => {
-    dispatch(counterAction.increment())
+    dispatch(counterActions.increment())
   };
 
   const decrement = () => {
-    dispatch(counterAction.decrement())
+    dispatch(counterActions.decrement())
   };
 
   return (

@@ -1,3 +1,6 @@
+"use client"
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/store/store";
 import React from "react";
 import Image from "next/image";
 import Logo from "@/public/Logo.webp";
@@ -19,6 +22,13 @@ import {
 import logo from "@/public/Logo.webp";
 
 const Hamzanav = () => {
+  const cartValue = useSelector(
+    (state: RootState) => state.cart.totalQuantity
+  );
+
+
+
+
   return (
     <div className="flex wrapper justify-between py-10">
       <Link href="/">
@@ -46,9 +56,9 @@ const Hamzanav = () => {
         </div>
       </div>
       <div className="h-10 w-10 relative rounded-full bg-gray-200 md:flex justify-center items-center sm:hidden md:block   ">
-        <div className="h-4 w-4 absolute top-1 right-2 rounded-full bg-red-300 text-sm flex justify-center items-center font-light">
-          0
-        </div>
+      <span className="h-4 w-4 absolute top-1 right-2 rounded-full bg-red-300 text-sm flex justify-center items-center  font-semibold">
+          {cartValue}
+        </span>
         <ShoppingCart />
       </div>
       <Sheet>
@@ -58,9 +68,9 @@ const Hamzanav = () => {
         <SheetContent className="w-full ">
           <div className="flex justify-center ">
             <div className="h-10 w-10 relative rounded-full bg-gray-200 flex justify-center items-center   ">
-        <div className="h-4 w-4 absolute top-1 right-2 rounded-full bg-red-300 text-sm flex justify-center items-center font-light">
-          0
-        </div>
+        <span className="h-4 w-4 absolute top-1 right-2 rounded-full bg-red-300 text-sm flex justify-center items-center font-light">
+          {cartValue}
+        </span>
         <ShoppingCart />
       </div>
 </div>

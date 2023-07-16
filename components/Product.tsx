@@ -2,7 +2,9 @@ import { StaticImageData } from "next/image";
 import ProductCard from "./ProductCard";
 import { Products } from "./ProductDetails";
 
-const Product = () => {
+
+
+const Product = ({ }) => {
   const productChecks = Products.slice(0, 3);
 
   return (
@@ -30,7 +32,6 @@ const Product = () => {
         </div>
       </div>
     </div>
-
   );
 };
 

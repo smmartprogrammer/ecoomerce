@@ -12,7 +12,7 @@ export interface Product {
   name: string;
   title:string;
   price: number;
-  image: string | StaticImageData;
+  image: image | string | StaticImageData;
   category: string;
   gender?: string;
   href?: string;
