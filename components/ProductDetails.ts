@@ -56,7 +56,7 @@ export const Products: Product[] = [
 {
     id: "5",
     name: "Product-5",
-    title:" ",
+    title:"Pink Fleece Sweatpants",
     category: "Pants",
     price: 195,
     image: Product5,

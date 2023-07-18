@@ -7,7 +7,7 @@ function ProductCard(props: {
   img: StaticImageData;
   category?: string;
   gender?: string;
-  id?: string;
+  _id?: string;
 }) {
   return (
     <Link href={`/allproducts/${props.id}`}>

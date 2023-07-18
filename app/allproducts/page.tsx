@@ -1,6 +1,3 @@
-
-import ProductCard from "@/components/ProductCard";
-// import { Products } from "@/components/ProductDetails";
 import { StaticImageData } from "next/image";
 import { client } from "@/sanity/lib/client";
 import { Product } from "@/components/Types";
@@ -21,48 +18,23 @@ export const getProductData = async () => {
   return res;
 };
 
-// interface Product {
-//   id: string;
-//   name: string;
-//   title:string;
-//   price: number;
-//   image: string | StaticImageData;
-//   category: string;
-//   gender?: string;
-//   href?: string;
-// }
 
 const AllProducts = async () => {
   const data: Product[] = await getProductData();
 
+
   return (
-    <div className="flex">
-      <div className="flex justify-between flex-wrap mt-0 px-10 py-15   ">
+    <div className="flex  sm:px-16 md:px-2 md:py-0.5 py-8">
+      <div className="flex justify-between flex-wrap mt-0 px-10 py-15 object-cover object-top max-h-[200]  ">
         {data.map((item) => (
           <div>
-            
-          {/* <img key={item.key } src={urlForImage(item.image.asset ).url()}  alt="product"} /> */}
-            <ProductCard
-              key={item.id}
-              title={item.title}
-              price={item.price}
-              IImage= {urlForImage(item.image)}
-              category={item.category}
-              id={item.id}
-            />
+            <Image src={urlForImage(item.image).url()} width={250} height={200} alt="productimage" />
+            <h3 className="font-bold text-lg mt-3 text-[#212121] py-1 ">{item.title} </h3>
+            <p className="font-bold text-base text-[#888888] py-1 ">{item.category} </p>
+            <p className="font-bold text-xl  py-1 text-[#212121] "> ${item.price} </p>
           </div>
         ))}
 
-        {/* {Products.map((product) => (
-        <ProductCard
-          key={product.id}
-          title={product.title}
-          price={product.price}
-          img={product.image as StaticImageData}
-          category={product.category }
-          id={product.id}
-        />
-      ))} */}
       </div>
     </div>
   );
