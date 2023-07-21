@@ -24,7 +24,8 @@ const AllProducts = async () => {
 
 
   return (
-    <div className="flex  sm:px-16 md:px-2 md:py-0.5 py-8">
+    <div className="grid grid-cols-[repeat(4, auto)] justify-center space-x-6 ">
+     {/* <div className="flex  sm:px-16 md:px-2 md:py-0.5 py-8"> */}
       <div className="flex justify-between flex-wrap mt-0 px-10 py-15 object-cover object-top max-h-[200]  ">
         {data.map((item) => (
           <div>

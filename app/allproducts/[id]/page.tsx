@@ -12,7 +12,7 @@ const getProductbyDetail = (id: string) => {
   return Products.filter((product) => product.id === id);
 };
 
-export default function Page({ params }: { params: { id: string } }) {
+export default function Page({ params }: { params: { id: string }}) {
   const result = getProductbyDetail(params.id);
 
   return (

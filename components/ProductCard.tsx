@@ -11,8 +11,8 @@ function ProductCard(props: {
 }) {
   return (
     <Link href={`/allproducts/${props.id}`}>
-      <div className=" py-6">
-        <Image src={props.img} alt="products" />
+      <div className=" py-6  ">
+        <Image src={props.img} alt="products" className="max-h-[300px]  " />
         <h3 className="font-bold text-lg mt-3 text-[#5A5A5A] py-1 ">
           {props.title}
         </h3>

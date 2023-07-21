@@ -19,7 +19,7 @@ const Product = ({ }) => {
       </div>
 
       <div className="flex">
-        <div className="flex justify-evenly mt-2 ">
+        <div className="flex justify-evenly mt-2 max-h[250px] ">
           {productChecks.map((product) => (
             <ProductCard
               key={product.id}
