@@ -40,7 +40,8 @@ const Hamzanav = () => {
         <ul className="md:flex md:justify-between md:items-center gap-x-5 md:block sm:hidden ">
           {NavbarArray.map((NavbarArray) => (
             <li className="font-normal text-base text-gray-700 ">
-              <Link href={NavbarArray.href}>{NavbarArray.label}</Link>
+              {/* <Link href={NavbarArray.href}>{NavbarArray.label}</Link> */}
+              <Link key={NavbarArray.href} href={NavbarArray.href}>{NavbarArray.label}</Link>
             </li>
           ))}
         </ul>
@@ -78,7 +79,8 @@ const Hamzanav = () => {
             <ul className="flex flex-col items-center gap-y-3   ">
               {NavbarArray.map((NavbarArray) => (
                 <li className="font-normal text-base text-gray-700 ">
-                  <Link href={NavbarArray.href}>{NavbarArray.label}</Link>
+                  {/* <Link href={NavbarArray.href}>{NavbarArray.label}</Link> */}
+                  <Link key={NavbarArray.href} href={NavbarArray.href}>{NavbarArray.label}</Link>
                 </li>
               ))}
             </ul>

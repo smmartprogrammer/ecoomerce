@@ -19,14 +19,14 @@ const Product = ({ }) => {
       </div>
 
       <div className="flex">
-        <div className="flex justify-evenly mt-2 max-h[250px] ">
+        <div className="flex justify-evenly mt-2 ">
           {productChecks.map((product) => (
             <ProductCard
               key={product.id}
               title={product.title}
               price={product.price}
               img={product.image as StaticImageData}
-              id={product.id}
+              // id={product.id}
             />
           ))}
         </div>
