@@ -3,8 +3,8 @@ import { useDispatch } from "react-redux";
 import React from "react";
 import { Button } from "./ui/button";
 import { ShoppingCart } from "lucide-react";
-import { cartActions } from "@/app/store/slice/cartSlice";
 import  toast from 'react-hot-toast';
+import { cartActions } from "@/app/store/cartSlice";
 
 
 
