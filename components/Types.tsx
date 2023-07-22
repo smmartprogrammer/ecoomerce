@@ -16,6 +16,7 @@ export interface Product {
   category: string;
   gender?: string;
   href?: string;
+  item: any
 }
 
 export const NavbarArray: Array<NavbarItemTypes> = [
