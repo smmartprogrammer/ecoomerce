@@ -9,7 +9,7 @@ const Product = ({ }) => {
 
   return (
     <div>
-      <div className="mt-28 mb-12 text-center  space-y-1">
+      <div className="mt-28 mb-12 text-center  space-y-1 md:py-9 md:px-32">
         <p className="text-blue-700 flex justify-center font-semibold text-sm   tracking-wider  ">
           PRODUCTS
         </p>
@@ -19,7 +19,7 @@ const Product = ({ }) => {
       </div>
 
       <div className="flex">
-        <div className="flex justify-evenly mt-2 ">
+        <div className="flex justify-evenly mt-2 md:py-9 md:px-32">
           {productChecks.map((product) => (
             <ProductCard
               key={product.id}

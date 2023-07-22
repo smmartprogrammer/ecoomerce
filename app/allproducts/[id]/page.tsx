@@ -73,7 +73,7 @@ export default function Page({ params }: { params: { id: string }}) {
           </div>
         </div>
         // </div>
-      ))}
+      ))} 
       <div></div>
       {/* <div className="">Overview Information</div> */}
     </div>

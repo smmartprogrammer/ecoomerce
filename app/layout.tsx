@@ -2,7 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Copyrights";
 import Copyrights from "@/components/Copyrights";
-import Hamzanav from "@/components/Hamzanav";
+import Navbar from "@/components/Navbar";
 import Providers from "@/components/Provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,8 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <main className="px-5 sm:px-16 md:px-32 md:py-0.5 py-8">
-            <Hamzanav />
+          {/* <main className="px-5 sm:px-16 md:px-24 md:py-0.5 py-8"> */}
+          <main className="px-0">
+
+            <Navbar />
             {children}
           </main>
           <Copyrights />

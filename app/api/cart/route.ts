@@ -1,8 +1,11 @@
-
 import { db, cartTable } from "@/lib/drizzle";
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 import { v4 as uuid } from "uuid";
+
+cookies().get("user_id")?.value
+
+fetch(`http://localhost:3000/api/cart?user_id=${cookies().get("user_id")?.value}`)
 
 
 export const GET = async (request: Request) => {
@@ -20,8 +23,10 @@ export const POST = async (request: Request) => {
 
     const uid = uuid()
     const setCookies = cookies()
+    const user_id = cookies().get("user_id")
 
-    if (!cookies().has("user_id")) {
+
+    if (!user_id) {
         setCookies.set("user_id", uid)
     }
 

@@ -8,9 +8,9 @@ module.exports = {
     './src/**/*.{ts,tsx}',
 	],
   theme: {
-    screens: {
-      xs:'475px',
-      sm: '640px',
+     screens: {
+      xs:'150px',
+      sm: '650px',
       md: '1000px',
       lg: '1024px',
       xl: '1280px',

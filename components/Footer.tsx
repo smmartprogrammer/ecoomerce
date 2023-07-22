@@ -7,7 +7,7 @@ import { link } from "fs";
 
 const Footer = () => {
   return (
-    <div className="flex justify-center flex-col md:flex-row mt-14">
+    <div className="flex md:justify-between flex-col md:flex-row mt-14 md:py-9 md:px-32">
       {/* left side */}
       <div className="flex flex-col  gap-4  ">
         <Image src={Logo} alt="logo" className="object-contain  " />
