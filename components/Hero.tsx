@@ -9,13 +9,12 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
 import Link from "next/link";
-import AllProducts from "./AllProducts";
 
 const Hero = () => {
   return (
     <div className="flex justify-center md:py-9 md:px-32 sm:mt-1 items-center wrapper py-10 xs:px-8 xs:py-8 sm:px-16 sm:py-7 ">
       {/* flex wrapper justify-between  py-10 xs:px-8 xs:py-8 sm:px-16 sm:py-16 */}
-      <div className="lg:w-[45%] xs:mt-px  border-3 border-black">
+      <div className="lg:w-[50%] xs:mt-px  border-3 border-black">
         <Badge className="rounded bg-gray-200 text-blue-700 py-1 px-6 text-lg ">
           Sale 70%
         </Badge>
@@ -36,7 +35,7 @@ const Hero = () => {
           </p>
         </Button>
         {/* </Link> */}
-        <div className="mt-10 md:flex md:justify-center md:items-center gap-4 w-28 xs:flex-col">
+        <div className="mt-10 md:flex md:justify-between md:items-center   ">
           <Image src={bazar} alt="bazar" />
           <Image src={bustle} alt="bustle" />
           <Image src={versace} alt="versace" />
@@ -51,9 +50,6 @@ const Hero = () => {
           <Image src={hero} alt="heroimage" />
         </div>
       </div>
-
-
-
 
 
     </div>

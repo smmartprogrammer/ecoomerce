@@ -1,10 +1,10 @@
 "use client";
 
-import ProductCard from "@/components/ProductCard";
+// import ProductCard from "@/components/ProductCard";
 import { Products } from "@/components/ProductDetails";
-import { ShoppingCart } from "lucide-react";
+// import { ShoppingCart } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import AddToCart from "@/components/AddToCart";
 // import Counter from "@/app/Counter";
 

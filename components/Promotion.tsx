@@ -5,8 +5,8 @@ import promo3 from "@/public/promo3.webp";
 
 const Promotion = () => {
   return (
-    <div>
-      <div className="mt-32 text-center  space-y-1 md:py-9 md:px-32">
+    <div className="">
+      <div className="mt-19 text-center  space-y-1 md:py-9 md:px-32">
         <p className="text-blue-700 flex justify-center font-semibold text-sm   tracking-wider  ">
           PROMOTIONS
         </p>
@@ -16,7 +16,7 @@ const Promotion = () => {
       </div>
 
       {/* right */}
-      <div className="flex flex-wrap  py-5 md:py-9 md:px-32">
+      <div className="mt-0 flex flex-wrap  py-0 md:py-0 md:px-32">
         <div className=" flex-1 flex flex-col ">
           <div className="w-auto mx-5 h-52 bg-[#D6D6D8] inline-flex ">
             <div className="max-w-[13rem] py-8 pl-8">
@@ -46,7 +46,7 @@ const Promotion = () => {
         </div>
 
         {/* left */}
-        <div className="md:flex-1 md:flex md:flex-row flex-col md:h-full w-full   ">
+        <div className="md:flex-1 md:flex md:flex-row flex-col md:h-[430px] w-full   ">
           <div className="mx-2 bg-[#EFE1C7] ">
             <div className="p-4 py-5 ">
               <p className="text-lg font-normal">Flex Sweatshirts </p>

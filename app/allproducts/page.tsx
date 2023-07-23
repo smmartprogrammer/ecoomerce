@@ -1,11 +1,11 @@
-import { StaticImageData } from "next/image";
+// import { StaticImageData } from "next/image";
 import { client } from "@/sanity/lib/client";
 import { Product } from "@/components/Types";
-import { urlForImage } from "@/sanity/lib/image";
-import { Image as IImage } from "sanity";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { ShoppingCart } from "lucide-react";
+// import { urlForImage } from "@/sanity/lib/image";
+// import { Image as IImage } from "sanity";
+// import Image from "next/image";
+// import { Button } from "@/components/ui/button";
+// import { ShoppingCart } from "lucide-react";
 import { HamzaProductCard } from "@/components/HamzaProductCard";
 
 

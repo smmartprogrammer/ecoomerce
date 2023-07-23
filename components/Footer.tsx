@@ -7,7 +7,7 @@ import { link } from "fs";
 
 const Footer = () => {
   return (
-    <div className="flex md:justify-between flex-col md:flex-row mt-14 md:py-9 md:px-32">
+    <div className="flex md:justify-center flex-col md:flex-row mt-14 md:py-9 md:px-32">
       {/* left side */}
       <div className="flex flex-col  gap-4  ">
         <Image src={Logo} alt="logo" className="object-contain  " />
@@ -19,7 +19,7 @@ const Footer = () => {
       </div>
 
       {/* right side */}
-      <div className="flex gap-6 flex-col md:flex-row justify-end   ">
+      <div className="flex gap-6 flex-col md:flex-row justify-center   ">
         {footerLinks.map((link) => (
           <div key={link.title}>
             <h3 className=" font-bold text-[#666666] text-xl ">{link.title} </h3>

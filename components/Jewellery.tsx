@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 
 const Jewellery = () => {
   return (
-    <div className="px-1 text-gray-700 mt-28 md:py-9 md:px-32">
+    <div className="px-1 text-gray-800 mt-20 md:py-9 md:px-32">
       <div className=" flex justify-start md:justify-end text-5xl font-bold py-4">
-        <h6 className="max-w-[27rem]">
+        <h6 className="max-w-[27rem] ">
           Unique and Authentic Vintage Designer Jewellery
         </h6>
       </div>

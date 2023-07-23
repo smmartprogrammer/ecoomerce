@@ -1,12 +1,15 @@
 import { StaticImageData } from "next/image";
 import ProductCard from "./ProductCard";
+import { HamzaProductCard } from "./HamzaProductCard";
+
 import { Products } from "./ProductDetails";
 
 
 
-const Product = ({ }) => {
-  const productChecks = Products.slice(0, 3);
 
+const PartabHamza = ({ }) => {
+  const productChecks = Products.slice(0, 3);
+ 
   return (
     <div>
       <div className="mt-24 mb-12 text-center  space-y-1 md:py-9 md:px-32">
@@ -21,7 +24,7 @@ const Product = ({ }) => {
       <div className="flex">
         <div className="flex justify-evenly mt-0 md:py-9 md:px-32">
           {productChecks.map((product) => (
-            <ProductCard
+            <HamzaProductCard
               key={product.id}
               title={product.title}
               price={product.price}
@@ -35,4 +38,4 @@ const Product = ({ }) => {
   );
 };
 
-export default Product;
+export default PartabHamza;

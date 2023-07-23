@@ -7,12 +7,13 @@ function ProductCard(props: {
   img: StaticImageData;
   category?: string;
   gender?: string;
+  id:string;
   _id?: string;
 }) {
   return (
     <Link href={`/allproducts/${props.id}`}>
-      <div className=" py-6  ">
-        <Image src={props.img} alt="products" className="max-h-[300px]  " />
+      <div className="mt-0  ">
+        <Image src={props.img} alt="products" width={1000} height={1000} className="max-h-[400px]  " />
         <h3 className="font-bold text-lg mt-3 text-[#5A5A5A] py-1 ">
           {props.title}
         </h3>
